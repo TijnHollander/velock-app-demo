@@ -1392,13 +1392,13 @@ function ProfileScreen({ time, hasSubscription, onToggleSubscription, onBack, na
               fontSize: 22, fontWeight: 700, letterSpacing: '-0.3px',
               lineHeight: 1.2, marginBottom: 6,
             }}>
-              Lock unlimited.<br/>Pay nothing per hour.
+              Lock unlimited.<br/>
             </div>
             <div style={{
               fontSize: 13, color: 'rgba(255,255,255,0.85)',
               marginBottom: 18, lineHeight: 1.45,
             }}>
-              Skip the hourly rate. With Pro you can reserve any locker
+              With Pro you can reserve any locker
               at any VELOCK station, up to 14 days per booking.
             </div>
 
