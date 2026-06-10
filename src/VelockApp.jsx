@@ -783,31 +783,9 @@ function StationScreen({ time, station, hasSubscription, selectedLocker, setSele
       </div>
 
       <div className="scroll-area" style={{ padding: '18px 22px 100px' }}>
-        {/* Two info tiles */}
+        {/* AVAILABLE tile only (RATE removed) */}
         <div style={{ display: 'flex', gap: 10, marginBottom: 18 }}>
-          <div className="stat-tile">
-            <div className="subtle" style={{
-              fontSize: 10, fontWeight: 600, letterSpacing: 0.5,
-            }}>RATE</div>
-            {hasSubscription ? (
-              <div className="grotesk" style={{
-                fontSize: 20, fontWeight: 700, color: C.brand, marginTop: 4,
-              }}>
-                Included<span style={{
-                  fontSize: 11, color: C.success, fontWeight: 600, marginLeft: 6,
-                }}>● PRO</span>
-              </div>
-            ) : (
-              <div className="grotesk" style={{
-                fontSize: 22, fontWeight: 700, color: C.ink, marginTop: 4,
-              }}>
-                €0.50<span style={{
-                  fontSize: 13, color: C.inkMuted, fontWeight: 500,
-                }}>/hr</span>
-              </div>
-            )}
-          </div>
-          <div className="stat-tile">
+          <div className="stat-tile" style={{ flex: 1 }}>
             <div className="subtle" style={{
               fontSize: 10, fontWeight: 600, letterSpacing: 0.5,
             }}>AVAILABLE</div>
